@@ -1,0 +1,15 @@
+{
+    "project": "example-project",
+    "components": [
+        {
+            "name": "hotel-booking",
+            "chunks": [
+                {
+                    "type": "mountable",
+                    "baseUrl": "ota",
+                    "entryPoint": "ota/index.ts"
+                }
+            ]
+        }
+    ]
+}
