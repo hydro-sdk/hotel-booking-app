@@ -1,0 +1,23 @@
+{
+  "name": "hotel-booking-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hydro-sdk/hotel-booking-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hydro-sdk/hotel-booking-app/issues"
+  },
+  "homepage": "https://github.com/hydro-sdk/hotel-booking-app#readme"
+}
