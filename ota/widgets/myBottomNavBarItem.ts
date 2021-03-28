@@ -1,19 +1,22 @@
 import { FontWeight } from "@hydro-sdk/hydro-sdk/runtime/dart/ui/index";
 import { BuildContext } from "@hydro-sdk/hydro-sdk/runtime/flutter/buildContext";
+import { Colors } from "@hydro-sdk/hydro-sdk/runtime/flutter/material/index";
 import {
-    Colors,
-} from "@hydro-sdk/hydro-sdk/runtime/flutter/material/index";
-import { BorderRadius, BoxDecoration, EdgeInsets, TextStyle } from "@hydro-sdk/hydro-sdk/runtime/flutter/painting/index";
+    BorderRadius,
+    BoxDecoration,
+    EdgeInsets,
+    TextStyle,
+} from "@hydro-sdk/hydro-sdk/runtime/flutter/painting/index";
 import { Widget } from "@hydro-sdk/hydro-sdk/runtime/flutter/widget";
 import {
     Container,
     GestureDetector,
     Icon,
+    IconData,
     Row,
     SizedBox,
     StatelessWidget,
     Text,
-    IconData,
 } from "@hydro-sdk/hydro-sdk/runtime/flutter/widgets/index";
 
 import { MyColors } from "../data";
@@ -67,11 +70,11 @@ export class MyBottomNavBarItem extends StatelessWidget {
                         new SizedBox({ width: 5 }),
                         this.active == this.id
                             ? new Text(this.text, {
-                                style: new TextStyle({
-                                    color: MyColors.darkBlue,
-                                    fontWeight: FontWeight.bold,
-                                }),
-                            })
+                                  style: new TextStyle({
+                                      color: MyColors.darkBlue,
+                                      fontWeight: FontWeight.bold,
+                                  }),
+                              })
                             : new Container({}),
                     ],
                 }),

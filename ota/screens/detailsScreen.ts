@@ -1,5 +1,6 @@
-import { Color, Radius } from "@hydro-sdk/hydro-sdk/runtime/dart/ui/index";
 import { Type } from "@hydro-sdk/hydro-sdk/runtime/dart/core/index";
+import { Color, Radius } from "@hydro-sdk/hydro-sdk/runtime/dart/ui/index";
+import { AlwaysStoppedAnimation } from "@hydro-sdk/hydro-sdk/runtime/flutter/animation/index";
 import { BuildContext } from "@hydro-sdk/hydro-sdk/runtime/flutter/buildContext";
 import {
     CircularProgressIndicator,
@@ -10,17 +11,24 @@ import {
     Scaffold,
     Theme,
 } from "@hydro-sdk/hydro-sdk/runtime/flutter/material/index";
-import { Alignment, 
-     BorderRadius, BoxDecoration, BoxFit, EdgeInsets, LinearGradient,
- } from "@hydro-sdk/hydro-sdk/runtime/flutter/painting/index";
+import {
+    Alignment,
+    BorderRadius,
+    BoxDecoration,
+    BoxFit,
+    EdgeInsets,
+    LinearGradient,
+} from "@hydro-sdk/hydro-sdk/runtime/flutter/painting/index";
 import { CrossAxisAlignment } from "@hydro-sdk/hydro-sdk/runtime/flutter/rendering/index";
 import { Widget } from "@hydro-sdk/hydro-sdk/runtime/flutter/widget";
 import {
     Align,
     Column,
     Container,
+    Expanded,
     Icon,
     Image,
+    MainAxisAlignment,
     MediaQuery,
     Padding,
     Positioned,
@@ -30,11 +38,8 @@ import {
     Stack,
     StatelessWidget,
     Text,
-    Expanded,
-    MainAxisAlignment,
     Transform,
 } from "@hydro-sdk/hydro-sdk/runtime/flutter/widgets/index";
-import { AlwaysStoppedAnimation } from "@hydro-sdk/hydro-sdk/runtime/flutter/animation/index";
 
 import { MyColors, destinationList } from "../data";
 
@@ -135,12 +140,14 @@ export class DetailsScreen extends StatelessWidget {
                                                         }
                                                     ),
                                                     new Text(
-                                                        `${destinationList[
-                                                            this.id
-                                                        ].placeName
-                                                        } - ${destinationList[
-                                                            this.id
-                                                        ].date
+                                                        `${
+                                                            destinationList[
+                                                                this.id
+                                                            ].placeName
+                                                        } - ${
+                                                            destinationList[
+                                                                this.id
+                                                            ].date
                                                         }`,
                                                         {
                                                             style: Theme.of(

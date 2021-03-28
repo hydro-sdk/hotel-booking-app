@@ -1,12 +1,8 @@
-import { runApp } from "@hydro-sdk/hydro-sdk/runtime/flutter/runApp";
 import { BuildContext } from "@hydro-sdk/hydro-sdk/runtime/flutter/buildContext";
-import {
-    MaterialApp,
-} from "@hydro-sdk/hydro-sdk/runtime/flutter/material/index";
+import { MaterialApp } from "@hydro-sdk/hydro-sdk/runtime/flutter/material/index";
+import { runApp } from "@hydro-sdk/hydro-sdk/runtime/flutter/runApp";
 import { Widget } from "@hydro-sdk/hydro-sdk/runtime/flutter/widget";
-import {
-    StatelessWidget,
-} from "@hydro-sdk/hydro-sdk/runtime/flutter/widgets/index";
+import { StatelessWidget } from "@hydro-sdk/hydro-sdk/runtime/flutter/widgets/index";
 
 import { DetailsScreen } from "./screens/detailsScreen";
 import { HomeScreen } from "./screens/homeScreen";
