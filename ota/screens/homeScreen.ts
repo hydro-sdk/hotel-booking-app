@@ -4,6 +4,7 @@ import {
     Radius,
 } from "@hydro-sdk/hydro-sdk/runtime/dart/ui/index";
 import { BuildContext } from "@hydro-sdk/hydro-sdk/runtime/flutter/buildContext";
+import { Key } from "@hydro-sdk/hydro-sdk/runtime/flutter/foundation/key";
 import {
     Colors,
     IconButton,
@@ -360,6 +361,11 @@ export class HomeScreen extends StatelessWidget {
                                                                                             {
                                                                                                 fit:
                                                                                                     BoxFit.cover,
+                                                                                                key: new Key(
+                                                                                                    destinationList[
+                                                                                                        index
+                                                                                                    ].placeName
+                                                                                                ),
                                                                                             }
                                                                                         ),
                                                                                     }
