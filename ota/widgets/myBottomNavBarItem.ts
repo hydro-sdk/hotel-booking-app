@@ -51,42 +51,41 @@ export class MyBottomNavBarItem extends StatelessWidget {
     public build(context: BuildContext): Widget {
         return new SizedBox({
             key: this.key,
-            child:
-                new GestureDetector({
-                    onTap: this.function,
-                    child: new Container({
-                        padding: EdgeInsets.symmetric({
-                            horizontal: 15.0,
-                            vertical: 9.0,
-                        }),
-                        decoration: new BoxDecoration({
-                            color:
-                                this.active == this.id
-                                    ? Colors.white
-                                    : Colors.transparent,
-                            borderRadius: BorderRadius.circular(25.0),
-                        }),
-                        child: new Row({
-                            children: [
-                                new Icon(this.icon, {
-                                    color:
-                                        this.active == this.id
-                                            ? MyColors.darkBlue
-                                            : Colors.white,
-                                }),
-                                new SizedBox({ width: 5 }),
-                                this.active == this.id
-                                    ? new Text(this.text, {
-                                        style: new TextStyle({
-                                            color: MyColors.darkBlue,
-                                            fontWeight: FontWeight.bold,
-                                        }),
-                                    })
-                                    : new Container({}),
-                            ],
-                        }),
+            child: new GestureDetector({
+                onTap: this.function,
+                child: new Container({
+                    padding: EdgeInsets.symmetric({
+                        horizontal: 15.0,
+                        vertical: 9.0,
                     }),
-                })
+                    decoration: new BoxDecoration({
+                        color:
+                            this.active == this.id
+                                ? Colors.white
+                                : Colors.transparent,
+                        borderRadius: BorderRadius.circular(25.0),
+                    }),
+                    child: new Row({
+                        children: [
+                            new Icon(this.icon, {
+                                color:
+                                    this.active == this.id
+                                        ? MyColors.darkBlue
+                                        : Colors.white,
+                            }),
+                            new SizedBox({ width: 5 }),
+                            this.active == this.id
+                                ? new Text(this.text, {
+                                      style: new TextStyle({
+                                          color: MyColors.darkBlue,
+                                          fontWeight: FontWeight.bold,
+                                      }),
+                                  })
+                                : new Container({}),
+                        ],
+                    }),
+                }),
+            }),
         });
     }
 }
