@@ -40,6 +40,13 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text("Tickets"), findsNothing);
       expect(find.text("Profile"), findsOneWidget);
+
+      expect(find.text("London"), findsOneWidget);
+      expect(find.byKey(const Key("London")), findsOneWidget);
+      await tester.tap(find.byKey(const Key("London")));
+      await tester.pumpAndSettle();
+
+      expect(find.text("InterContinental"), findsOneWidget);
     });
   });
 }
