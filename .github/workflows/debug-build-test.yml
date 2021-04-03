@@ -54,7 +54,7 @@ jobs:
       with:
         path: 'hotel_booking_app'
 
-    - name: Get packages for Animated List
+    - name: Get packages for Hotel Booking
       run: npm install
       working-directory: hotel_booking_app
 
