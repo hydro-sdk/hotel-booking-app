@@ -116,3 +116,6 @@ dist
 .idea
 .hydroc
 assets/ota
+
+package-lock.json
+pubspec.lock
