@@ -22,8 +22,9 @@
   },
   "homepage": "https://github.com/hydro-sdk/hotel-booking-app#readme",
   "dependencies": {
-    "@hydro-sdk/waveform": "0.0.1-nightly.34",
-    "@hydro-sdk/hydro-sdk": "0.0.1-nightly.189",
+
+    "@hydro-sdk/waveform": "0.0.1-nightly.35",
+    "@hydro-sdk/hydro-sdk": "0.0.1-nightly.199",
     "prettier": "^2.2.0",
     "prettier-plugin-import-sort": "0.0.6",
     "import-sort-style-module": "^6.0.0"
