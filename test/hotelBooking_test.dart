@@ -12,7 +12,7 @@ void main() {
   testWidgets('', (WidgetTester tester) async {
     await tester.runAsync(() async {
       await tester.pumpWidget(const RunComponentFromFile(
-          component: "hotel-booking", path: "../assets/ota/hotel-booking.ota"));
+          component: "hotel-booking", path: "assets/ota/hotel-booking.ota"));
 
       await tester.pumpAndSettle();
 
