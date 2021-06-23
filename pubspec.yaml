@@ -7,12 +7,9 @@ dependencies:
     sdk: flutter
   hydro_sdk: 
     git: 
-      ref: "0.0.1-nightly.246"
+      ref: "0.0.1-nightly.249"
       url: "git://github.com/hydro-sdk/hydro-sdk.git"
-  waveform: 
-    git: 
-      ref: "0.0.1-nightly.36"
-      url: "git://github.com/hydro-sdk/waveform.git"
+  waveform: 0.0.1-nightly.43
 dev_dependencies: 
   flutter_test: 
     sdk: flutter
